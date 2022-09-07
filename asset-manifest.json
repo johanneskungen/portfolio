@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.94763cab.css",
+    "main.js": "/portfolio/static/js/main.d002489d.js",
+    "static/media/amazonscanner.png": "/portfolio/static/media/amazonscanner.6e8077097467ff91d620.png",
+    "index.html": "/portfolio/index.html",
+    "main.94763cab.css.map": "/portfolio/static/css/main.94763cab.css.map",
+    "main.d002489d.js.map": "/portfolio/static/js/main.d002489d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94763cab.css",
+    "static/js/main.d002489d.js"
+  ]
+}
