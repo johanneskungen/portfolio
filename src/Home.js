@@ -15,7 +15,7 @@ function Home({ setPage }) {
   return (
     <motion.div
       animate={repo}
-      className="flex items-center justify-center h-screen overflow-x-clip"
+      className="flex items-center justify-center h-screen"
     >
       <div className="md:hidden absolute -top-40 -z-10"><Svg /></div>
       <div className="hidden md:block md:absolute -z-10 -top-10 w-screen"><Svg2 /></div>
@@ -32,7 +32,7 @@ function Home({ setPage }) {
           },
         }}
         exit={{ opacity: 0 }}
-        className="items-center flex flex-col mb-12"
+        className="items-center flex flex-col ml-6 mb-12"
       >
         <h1 className="text-center text-5xl font-bold">
           My name is <span className="gr">Johannes</span>
