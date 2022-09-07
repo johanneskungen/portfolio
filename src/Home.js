@@ -17,7 +17,7 @@ function Home({ setPage }) {
       animate={repo}
       className="flex items-center justify-center h-screen overflow-x-clip"
     >
-      <div className="md:hidden absolute -top-32 -z-10"><Svg /></div>
+      <div className="md:hidden absolute -top-40 -z-10"><Svg /></div>
       <div className="hidden md:block md:absolute -z-10 -top-10 w-screen"><Svg2 /></div>
 
       <motion.div
@@ -37,10 +37,10 @@ function Home({ setPage }) {
         <h1 className="text-center text-5xl font-bold">
           My name is <span className="gr">Johannes</span>
         </h1>
-        <p className="text-black/40 font-semibold text-xl text-center mt-1">
+        <p className="text-black/40 font-semibold text-xl mx-10 text-center mt-1">
           I wish you a warm welcome to my portfolio-site!
         </p>
-        <p className="text-black/40 font-semibold text-sm text-center w-96">
+        <p className="text-black/40 font-semibold text-sm text-center w-80 md:w-96">
           Here you will find all about me, how you can contact me, my best
           projects and so on.
         </p>
