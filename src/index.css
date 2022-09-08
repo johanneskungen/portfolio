@@ -4,9 +4,16 @@
 
 @layer base{
     body{
-        @apply overflow-x-clip
+        @apply overflow-x-hidden
     }
 }
+
+*{
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
 .gr{
     color: #3BCA17;
