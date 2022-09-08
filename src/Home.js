@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import Svg from './Svg'
-import Svg2 from './Svg2'
+import Blob from "./Blob";
 
 function Home({ setPage }) {
   const repo = useAnimation();
@@ -16,8 +16,7 @@ function Home({ setPage }) {
     <motion.div
       animate={repo}
     >
-      <div className="hidden md:block md:absolute -z-10 -top-10 w-screen"><Svg2 /></div>
-
+      <div className="hidden md:block md:absolute -z-10 w-screen h-screen overflow-hidden"><Blob/></div>
       <motion.div
         initial={{ y: -600 }}
         animate={{
@@ -30,9 +29,10 @@ function Home({ setPage }) {
           },
         }}
         exit={{ opacity: 0 }}
-        className=" flex-col mb-12 w-screen flex items-center justify-center h-screen overflow-x-clip"
+        className="overflow-x-clip w-screen h-screen flex flex-col items-center"
       >
-        <h1 className="text-center text-5xl font-bold">
+        <div className="w-full absolute md:hidden -z-10 top-0 overflow-x-clip"><Svg /></div>
+        <h1 className="text-center text-5xl font-bold mt-64">
           My name is <span className="gr">Johannes</span>
         </h1>
         <p className="text-black/40 font-semibold text-xl mx-10 text-center mt-1">
