@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a6be380d.css",
-    "main.js": "/portfolio/static/js/main.3dec5aa9.js",
+    "main.css": "/portfolio/static/css/main.45f96a99.css",
+    "main.js": "/portfolio/static/js/main.37a5c41b.js",
     "static/media/amazonscanner.png": "/portfolio/static/media/amazonscanner.6e8077097467ff91d620.png",
     "index.html": "/portfolio/index.html",
-    "main.a6be380d.css.map": "/portfolio/static/css/main.a6be380d.css.map",
-    "main.3dec5aa9.js.map": "/portfolio/static/js/main.3dec5aa9.js.map"
+    "main.45f96a99.css.map": "/portfolio/static/css/main.45f96a99.css.map",
+    "main.37a5c41b.js.map": "/portfolio/static/js/main.37a5c41b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6be380d.css",
-    "static/js/main.3dec5aa9.js"
+    "static/css/main.45f96a99.css",
+    "static/js/main.37a5c41b.js"
   ]
 }
