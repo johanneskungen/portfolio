@@ -16,7 +16,6 @@ function Home({ setPage }) {
     <motion.div
       animate={repo}
     >
-      <div className={`md:hidden absolute -top-10 -z-10 w-[${window.innerWidth}] overflow-x-hidden`}><Svg/></div>
       <div className="hidden md:block md:absolute -z-10 -top-10 w-screen"><Svg2 /></div>
 
       <motion.div
