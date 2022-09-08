@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-import Svg from './Svg'
-import Blob from "./Blob";
+import wave from './assets/wave.png'
+import blob from './assets/blob.png'
 
 function Home({ setPage }) {
   const repo = useAnimation();
@@ -16,7 +16,12 @@ function Home({ setPage }) {
     <motion.div
       animate={repo}
     >
-      <div className="hidden md:block md:absolute -z-10 w-screen h-screen overflow-hidden"><Blob/></div>
+      <div className="hidden md:block absolute top-0 left-0 w-screen h-screen -z-10">
+        <img src={blob} alt="background" className="w-full h-full object-cover"/>
+      </div>
+      <div className="md:hidden absolute top-0 left-0 w-screen h-screen -z-10">
+        <img src={wave} alt="background" className="w-full h-full object-cover"/>
+      </div>
       <motion.div
         initial={{ y: -600 }}
         animate={{
@@ -31,7 +36,6 @@ function Home({ setPage }) {
         exit={{ opacity: 0 }}
         className="overflow-x-clip w-screen h-screen flex flex-col items-center"
       >
-        <div className="w-full absolute md:hidden -z-10 top-0 overflow-x-clip"><Svg /></div>
         <h1 className="text-center text-5xl font-bold mt-64">
           My name is <span className="gr">Johannes</span>
         </h1>
