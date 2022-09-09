@@ -17,9 +17,11 @@ function Home({ setPage }) {
       animate={repo}
       className="relative w-screen h-screen overflow-x-clip"
     >
-      <div className="w-screen h-screen absolute top-0 left-0 -z-10">
+      <div className="hidden md:block absolute top-0 left-0 -z-10">
         <Svg />
       </div>
+      <img src={wave} alt="background" className="md:hidden absolute -z-10 h-[120vh] w-[100vw] top-0 left-0"/>
+
       <motion.div
         initial={{ y: -600 }}
         animate={{
