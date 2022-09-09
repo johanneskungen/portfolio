@@ -18,9 +18,9 @@ function Projects({ setPage }) {
       <motion.div animate={repo}>
         <div
           onClick={() => exitAnimation("home")}
-          className="fixed top-10 ml-4 font-semibold border border-black/20 px-4 rounded-full h-7 cursor-pointer bg-blue-600"
+          className="fixed top-10 right-4 font-semibold border border-black/20 px-2 rounded-full cursor-pointer bg-red-600"
         >
-          back
+          X
         </div>
         <h1 className="font-semibold text-3xl text-black/70 text-center p-8">
           Amazon scanner
@@ -53,7 +53,7 @@ function Projects({ setPage }) {
                 concepts such as Axios, React-Icons, States, custom Hooks and
                 more.
               </p>
-              <div className="flex flex-row justify-evenly w-screen mb-44 xl:mb-0">
+              <div className="flex justify-center gap-8">
                 <button className="w-36 self-center mt-8 h-10 text-lg rounded-full shadow-xl border text-white border-black/20 bg-blue-600 font-semibold ">
                   <a href="mailto:johannes.foretag@gmail.com">contact me</a>
                 </button>

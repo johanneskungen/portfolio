@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import wave from './assets/wave.png'
-import blob from './assets/blob.png'
+import Svg from './Svg'
 
 function Home({ setPage }) {
   const repo = useAnimation();
@@ -15,12 +15,12 @@ function Home({ setPage }) {
   return (
     <motion.div
       animate={repo}
-      className="relative w-screen h-screen overflow-x-clip"
+      className="relative w-screen h-screen overflow-x-clip overflow-y-clip md:overflow-y-visible"
     >
-      <div className="hidden md:block absolute top-0 left-0 w-screen h-screen -z-10">
-        <img src={blob} alt="background" className="w-full h-full object-cover"/>
+      <div className="absolute top-0 left-0 -z-10">
+        <Svg />
       </div>
-      <img src={wave} alt="background" className="md:hidden absolute -z-10 h-[120vh] w-[120vw] top-0 left-0"/>
+      
       <motion.div
         initial={{ y: -600 }}
         animate={{
