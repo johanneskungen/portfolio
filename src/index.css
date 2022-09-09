@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 @layer base{
-    body{
-        @apply overflow-x-hidden
-    }
+
 }
 
 *{
@@ -17,4 +15,8 @@
 
 .gr{
     color: #3BCA17;
+}
+
+.background{
+  background-image: url('/src/assets/wave.png');
 }

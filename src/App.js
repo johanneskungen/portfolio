@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Home from "./Home";
-import Info from "./Info";
 import Projects from "./Projects";
+import Project2 from "./Project2";
 function App() {
   const [page, setPage] = useState(["home"]);
 
@@ -12,10 +12,10 @@ function App() {
         {page.includes("home") && <Home key="page1" setPage={setPage} />}
       </motion.div>
       <motion.div>
-        {page.includes("infopage") && <Info key="page2" setPage={setPage} />}
+        {page.includes("projects") && <Projects key="page3" setPage={setPage}/>}
       </motion.div>
       <motion.div>
-        {page.includes("projects") && <Projects key="page3" setPage={setPage}/>}
+        {page.includes("project2") && <Project2 key="page4" setPage={setPage} />}
       </motion.div>
     </AnimatePresence>
   );

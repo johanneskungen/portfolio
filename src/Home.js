@@ -15,13 +15,12 @@ function Home({ setPage }) {
   return (
     <motion.div
       animate={repo}
+      className="relative w-screen h-screen overflow-x-clip"
     >
       <div className="hidden md:block absolute top-0 left-0 w-screen h-screen -z-10">
         <img src={blob} alt="background" className="w-full h-full object-cover"/>
       </div>
-      <div className="md:hidden absolute top-0 left-0 w-screen h-screen -z-10">
-        <img src={wave} alt="background" className="w-full h-full object-cover"/>
-      </div>
+      <img src={wave} alt="background" className="md:hidden absolute -z-10 h-[120vh] w-[120vw] top-0 left-0"/>
       <motion.div
         initial={{ y: -600 }}
         animate={{
@@ -36,6 +35,7 @@ function Home({ setPage }) {
         exit={{ opacity: 0 }}
         className="overflow-x-clip w-screen h-screen flex flex-col items-center"
       >
+        
         <h1 className="text-center text-5xl font-bold mt-64">
           My name is <span className="gr">Johannes</span>
         </h1>
@@ -47,13 +47,7 @@ function Home({ setPage }) {
           projects and so on.
         </p>
         <div>
-          <div className="flex flex-row w-[25rem] md:w-[30rem] justify-evenly">
-            <button
-              onClick={() => exitAnimation("infopage")}
-              className="mt-12 bg-black text-white rounded-full h-10 w-24 md:w-32 text-[13px] md:text-sm font-semibold"
-            >
-              {"<MyJourney />"}
-            </button>
+          <div className="flex flex-row w-[20rem] md:w-[25rem] justify-evenly">
             <button
               onClick={() => exitAnimation("projects")}
               className="mt-12 bg-black text-white rounded-full h-10 w-24 md:w-32 text-[13px] md:text-sm font-semibold"
