@@ -15,12 +15,11 @@ function Home({ setPage }) {
   return (
     <motion.div
       animate={repo}
-      className="relative w-screen h-screen overflow-x-clip overflow-y-clip md:overflow-y-visible"
+      className="relative w-screen h-screen overflow-x-clip"
     >
-      <div className="absolute top-0 left-0 -z-10">
+      <div className="w-screen h-screen absolute top-0 left-0 -z-10">
         <Svg />
       </div>
-      
       <motion.div
         initial={{ y: -600 }}
         animate={{
