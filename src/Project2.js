@@ -36,17 +36,12 @@ function Project2({ setPage }) {
             >
               <div className="w-[93%] md:w-[80%] lg:w-[62%] xl:w-[55rem] flex flex-col">
                 <h2 className="font-semibold text-center text-xl mt-4">
-                  My favourite project so far
+                  Weather comparer
                 </h2>
                 <br></br>
                 <p>
-                  The amazon scanner is a project that I built a few months ago.
-                  It is an application where the user can type in an amazon url
-                  with a product that they want to watch. The user also specifies
-                  an amount which will trigger a function that send them a email
-                  when the price is below. The amazon scanner runs its scraping
-                  function every 30 minutes.<br></br>
-                  <br></br>The amazon scanner is built with Node JS on the backend
+                  The weather comparer is a site that I built some weeks ago. The user enters their country and city, then it will scrape three of the biggest weather sites in sweden and compare the results.<br></br>
+                  <br></br>The weather comparer is built with Node JS on the backend
                   with a tool called Puppeteer for scraping. The frontend is built
                   with React JS combined with many different libraries and
                   concepts such as Axios, React-Icons, States, custom Hooks and

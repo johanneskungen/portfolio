@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-
-}
-
 *{
     -ms-overflow-style: none;
   }

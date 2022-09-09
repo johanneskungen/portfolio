@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-import wave from './assets/wave.png'
+import wave from './assets/smbackground.png'
 import Svg from './Svg'
 
 function Home({ setPage }) {
@@ -20,10 +20,10 @@ function Home({ setPage }) {
       <div className="hidden md:block absolute top-0 left-0 -z-10">
         <Svg />
       </div>
-      <img src={wave} alt="background" className="md:hidden absolute -z-10 h-[120vh] w-[100vw] top-0 left-0"/>
+      <img src={wave} alt="background" className="md:hidden absolute object-cover -z-10 h-[120vh] w-[100vw] top-0 left-0"/>
 
       <motion.div
-        initial={{ y: -600 }}
+        initial={{ y: -650 }}
         animate={{
           y: 0,
           transition: {
@@ -37,7 +37,7 @@ function Home({ setPage }) {
         className="overflow-x-clip w-screen h-screen flex flex-col items-center"
       >
         
-        <h1 className="text-center text-5xl font-bold mt-64">
+        <h1 className="text-center text-5xl font-bold mt-44 md:mt-72">
           My name is <span className="gr">Johannes</span>
         </h1>
         <p className="text-black/40 font-semibold text-xl mx-10 text-center mt-1">
@@ -59,6 +59,12 @@ function Home({ setPage }) {
               <a href="mailto:johannes.foretag@gmail.com">{"<Mail />"}</a>
             </button>
           </div>
+        </div>
+        <div className="flex w-[22rem] md:w-[30rem] mt-24 md:mt-44 justify-evenly items-center rounded-sm shadow-xl text-[1.05rem] bg-white h-14">
+          <a href="https://www.fiverr.com/share/lLR44e">fiverr</a>
+          <a href="mailto:johannes.foretag@gmail.com">email</a>
+          <a href="https://github.com/johanneskungen">github</a>
+          <a href="https://youtube.com">youtube</a>
         </div>
       </motion.div>
     </motion.div>
