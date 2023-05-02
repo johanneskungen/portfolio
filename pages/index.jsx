@@ -1,7 +1,8 @@
+import Hero from "@/components/Hero";
 import React from "react";
 
 function index() {
-  return <div>index</div>;
+  return <Hero />;
 }
 
 export default index;
