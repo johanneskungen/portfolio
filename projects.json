@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "title": "Blackjacker",
+            "description": "A blackjack tool for beginners to learn the basic strategy of blackjack.",
+            "github": "https://github.com/johanneskungen/blackjacker",
+            "link": "https://blackjacker.vercel.app/",
+            "id": 1,
+            "libraries": ["NextJS"]
+        },
+        {
+            "title": "Web chat application",
+            "description": "A chat application on the web, created with Socket.io.",
+            "github": "https://github.com/johanneskungen/socket_frontend",
+            "link": "https://socket-frontend-ochre.vercel.app/",
+            "id": 2,
+            "libraries": ["Socket.io", "NodeJS-server"]
+        },
+        {
+            "title": "Casinosverige",
+            "description": "A site that helps users find the best bonuses available on casino.",
+            "github": "https://github.com/johanneskungen/casino",
+            "link": "https://casino-sepia-phi.vercel.app/",
+            "id": 3,
+            "libraries": ["Cheerio", "Cloud function"]
+        }
+    ]
+}

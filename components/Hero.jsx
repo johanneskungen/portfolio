@@ -1,4 +1,5 @@
 import React from "react";
+import Projects from "./Projects";
 import { AiFillGithub } from "react-icons/ai";
 import { HiOutlineCode } from "react-icons/hi";
 import { useRouter } from "next/router";
@@ -6,7 +7,7 @@ import { useRouter } from "next/router";
 function Hero() {
   const router = useRouter();
   return (
-    <main className="h-[200vh]">
+    <main className="flex flex-col">
       <div className="absolute w-24 flex gap-3 h-4 bottom-8 left-[50%] translate-x-[-50%]">
         <div className="w-4 h-4 bg-white rounded-full"></div>
         <div className="w-4 h-4 bg-white rounded-full"></div>
@@ -28,13 +29,15 @@ function Hero() {
             >
               See my Github <AiFillGithub size={30} />
             </button>
-            <button className="hero-button">
+            <button onClick={() => router.push("#p")} className="hero-button">
               See my work <HiOutlineCode size={30} />
             </button>
           </div>
         </div>
       </div>
-      <div>{/* Projects */}</div>
+      <div className="grid place-items-center">
+        <Projects />
+      </div>
     </main>
   );
 }
