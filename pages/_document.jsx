@@ -4,7 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="bg-slate-700 text-white">
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+      <body className="text-white">
         <Main />
         <NextScript />
       </body>

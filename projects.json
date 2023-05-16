@@ -14,7 +14,7 @@
             "github": "https://github.com/johanneskungen/socket_frontend",
             "link": "https://socket-frontend-ochre.vercel.app/",
             "id": 2,
-            "libraries": ["Socket.io", "NodeJS-server"]
+            "libraries": ["Socket.io", "NodeJS"]
         },
         {
             "title": "Casinosverige",
@@ -23,6 +23,14 @@
             "link": "https://casino-sepia-phi.vercel.app/",
             "id": 3,
             "libraries": ["Cheerio", "Cloud function"]
+        },
+        {
+            "title": "Youtube Downloader",
+            "description": "A site that helps users download their favourite youtube videos.",
+            "github": "https://github.com/johanneskungen/videodownloader",
+            "link": "https://videodownloader-two.vercel.app/",
+            "id": 4,
+            "libraries": ["Node-YTDL"]
         }
     ]
 }

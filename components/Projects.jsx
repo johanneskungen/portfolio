@@ -9,32 +9,28 @@ function Projects() {
   return (
     <section id="p" className="w-[750px] mt-32 mb-80">
       <div>
-        <h1 className="font-bold text-2xl text-indigo-400 ">Projects</h1>
-        <p className="font-semibold text-sm w-[50%] mt-2">
+        <h1 className="font-bold text-2xl text-indigo-600 ">Projects</h1>
+        <p className="font-semibold text-gray-500 text-base w-[80%] mt-2">
           During the last couple of months, I have been busy with uilding
           websites and web applications here a few of them:
         </p>
-        <div className="grid grid-cols-3 gap-4 text-sm mt-4">
+        <div className="grid grid-cols-3 gap-4 mt-4">
           {p.map((app) => (
             <div
-              className="flex flex-col gap-3 cursor-pointer border p-2 rounded shadow-md text-black bg-white"
+              className="cursor-pointer hover:scale-105 duration-300 max-w-sm h-[16rem] bg-white flex flex-col justify-evenly rounded overflow-hidden shadow-lg"
               key={app.id}
+              onClick={() => router.push(app.link)}
             >
-              <p className="text-lg font-semibold">{app.title}</p>
-              <p className="font-thin">{app.description}</p>
-              <div className="flex gap-2">
-                <button
-                  className="p-button"
-                  onClick={() => router.push(app.github)}
-                >
-                  Source Code
-                </button>
-                <button
-                  className="p-button"
-                  onClick={() => router.push(app.link)}
-                >
-                  Go to Website
-                </button>
+              <div className="px-6 py-4">
+                <p className="font-bold text-gray-700 text-xl mb-2">
+                  {app.title}
+                </p>
+                <p className="text-gray-700 text-sm">{app.description}</p>
+              </div>
+              <div className="flex items-center justify-center">
+                {app.libraries.map(l => (
+                  <button key={l.length * Math.random()} className="p-button">#{l}</button>
+                ))}
               </div>
             </div>
           ))}
@@ -45,3 +41,16 @@ function Projects() {
 }
 
 export default Projects;
+
+const LinkButtons = () => {
+  return (
+    <>
+      <button className="p-button" onClick={() => router.push(app.github)}>
+        Source Code
+      </button>
+      <button className="p-button" onClick={() => router.push(app.link)}>
+        Go to Website
+      </button>
+    </>
+  );
+};
