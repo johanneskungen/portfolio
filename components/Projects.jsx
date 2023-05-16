@@ -10,9 +10,9 @@ function Projects() {
     <section id="p" className="w-[750px] mt-32 mb-80">
       <div>
         <h1 className="font-bold text-2xl text-indigo-600 ">Projects</h1>
-        <p className="font-semibold text-gray-500 text-base w-[80%] mt-2">
-          During the last couple of months, I have been busy with uilding
-          websites and web applications here a few of them:
+        <p className="text-gray-500 text-base w-[80%] mt-2">
+          During the last couple of months, I have been busy with building
+          websites and web applications, here a few of them:
         </p>
         <div className="grid grid-cols-3 gap-4 mt-4">
           {p.map((app) => (

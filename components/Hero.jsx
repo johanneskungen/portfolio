@@ -15,7 +15,7 @@ function Hero() {
       </div>
       <div className="grid h-[80vh] place-items-center">
         <div className="flex flex-col items-start gap-4">
-          <h1 className="font-semibold md:text-4xl text-2xl text-gray-800">
+          <h1 className="font-semibold md:text-4xl text-2xl text-gray-500">
             Johannes Eriksson, full stack developer
           </h1>
           <div className="flex gap-2">
