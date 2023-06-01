@@ -43,7 +43,7 @@
       "github": "https://github.com/johanneskungen/blog",
       "link": "https://blog-five-chi-89.vercel.app/",
       "id": 5,
-      "libraries": ["Server-actions"]
+      "libraries": ["Server-actions", "Next-auth", "Supabase"]
     }
   ]
 }
