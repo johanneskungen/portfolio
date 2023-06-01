@@ -15,10 +15,10 @@ function Hero() {
       </div>
       <div className="grid h-[80vh] place-items-center">
         <div className="flex flex-col items-start gap-4">
-          <h1 className="font-semibold md:text-4xl text-2xl text-gray-500">
+          <h1 className="font-semibold px-3 md:px-0 md:text-4xl text-2xl text-gray-500">
             Johannes Eriksson, full stack developer
           </h1>
-          <div className="flex gap-2">
+          <div className="flex px-3 md:px-0 gap-2">
             <button
               onClick={() =>
                 router.push(
