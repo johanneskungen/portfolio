@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-        "img": "https://gorzelinski.com/static/1db41e3ecd311724a15306b270d99dd9/c7f96/next-js-logo.webp",
+      "img": "https://gorzelinski.com/static/1db41e3ecd311724a15306b270d99dd9/c7f96/next-js-logo.webp",
       "title": "Blackjacker",
       "description": "A blackjack tool for beginners to learn the basic strategy of blackjack.",
       "github": "https://github.com/johanneskungen/blackjacker",
@@ -10,7 +10,7 @@
       "libraries": ["NextJS"]
     },
     {
-        "img": "https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo-1024x704.png",
+      "img": "https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo-1024x704.png",
       "title": "Web chat application",
       "description": "A chat application on the web, created with Socket.io.",
       "github": "https://github.com/johanneskungen/socket_frontend",
@@ -19,16 +19,7 @@
       "libraries": ["Socket.io", "NodeJS"]
     },
     {
-        "img": "https://gorzelinski.com/static/1db41e3ecd311724a15306b270d99dd9/c7f96/next-js-logo.webp",
-      "title": "Casinosverige",
-      "description": "A site that helps users find the best bonuses available on casino.",
-      "github": "https://github.com/johanneskungen/casino",
-      "link": "https://casino-sepia-phi.vercel.app/",
-      "id": 3,
-      "libraries": ["Cheerio", "Cloud function"]
-    },
-    {
-        "img": "https://gorzelinski.com/static/1db41e3ecd311724a15306b270d99dd9/c7f96/next-js-logo.webp",
+      "img": "https://gorzelinski.com/static/1db41e3ecd311724a15306b270d99dd9/c7f96/next-js-logo.webp",
       "title": "Youtube Downloader",
       "description": "A site that helps users download their favourite youtube videos.",
       "github": "https://github.com/johanneskungen/videodownloader",
@@ -37,13 +28,22 @@
       "libraries": ["Node-YTDL"]
     },
     {
-        "img": "https://gorzelinski.com/static/1db41e3ecd311724a15306b270d99dd9/c7f96/next-js-logo.webp",
+      "img": "https://gorzelinski.com/static/1db41e3ecd311724a15306b270d99dd9/c7f96/next-js-logo.webp",
       "title": "Blog site",
       "description": "A simple blog site to try out next 13 server-actions",
       "github": "https://github.com/johanneskungen/blog",
       "link": "https://blog-five-chi-89.vercel.app/",
       "id": 5,
       "libraries": ["Server-actions", "Next-auth", "Supabase"]
+    },
+    {
+      "title": "Chatbot",
+      "description": "A Chatbot that helps users with anything they like.",
+      "link": "https://chatbotai-eight.vercel.app/",
+      "id": 6,
+      "img": "https://gorzelinski.com/static/1db41e3ecd311724a15306b270d99dd9/c7f96/next-js-logo.webp",
+      "github": "https://github.com/johanneskungen/chatbotai",
+      "libraries": ["OpenAI"]
     }
   ]
 }
